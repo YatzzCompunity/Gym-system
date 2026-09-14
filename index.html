@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gym Member Card Generator</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+<h1>GYM MEMBER CARD</h1>
+
+<div class="container">
+
+<div class="form">
+
+<input type="file" id="photo">
+
+<input id="name" placeholder="Nama Member">
+
+<input id="age" placeholder="Umur">
+
+<select id="package">
+<option>EXTAND 1 BULAN</option>
+<option>GOLD 3 BULAN</option>
+<option>VIP 1 TAHUN</option>
+</select>
+
+<input type="date" id="start">
+
+<button onclick="generate()">Generate Card</button>
+
+<button onclick="download()">Download</button>
+
+</div>
+
+
+<div id="card">
+
+<h2>KARTU MEMBER</h2>
+
+<img id="memberPhoto">
+
+<h3 id="memberName">
+NAMA MEMBER
+</h3>
+
+<p id="idMember">
+ID MEMBER
+</p>
+
+
+<p>
+Member:
+<span id="memberPackage">
+-
+</span>
+
+<b class="active">
+Aktif
+</b>
+
+</p>
+
+
+<p>
+Exp:
+<span id="expired">
+-
+</span>
+</p>
+
+
+<div id="qr"></div>
+
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
